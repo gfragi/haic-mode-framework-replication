@@ -3,6 +3,8 @@ message: "If you use this package, please cite it as below."
 title: "Replication package: mode-based HAIC evaluation applied to a municipal permit workflow"
 type: software
 version: 1.0.0
+doi: 10.5281/zenodo.23973173
+date-released: 2026-11-05
 license: MIT
 repository-code: "https://github.com/gfragi/haic-mode-framework-replication"
 authors:

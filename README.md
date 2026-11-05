@@ -1,5 +1,7 @@
 # Replication package: mode-based HAIC evaluation applied to a municipal permit workflow
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23973173.svg)](https://doi.org/10.5281/zenodo.23973173)
+
 This repository accompanies the paper
 
 > Fragiadakis, G., Pnevmatikakis, A., Diou, C., Kousiouris, G., Talantzis, F., & Nikolaidou, M.
@@ -72,7 +74,13 @@ AI latency of each application; it does not read names, field values, or comment
 
 ## Citation
 
-See `CITATION.cff`. Please cite the paper and this repository (Zenodo DOI to be added on release).
+Please cite the paper and this repository:
+
+> Fragiadakis, G., Pnevmatikakis, A., Diou, C., Kousiouris, G., Talantzis, F., & Nikolaidou, M. (2026).
+> *Replication package: mode-based HAIC evaluation applied to a municipal permit workflow* (v1.0.0).
+> Zenodo. https://doi.org/10.5281/zenodo.23973173
+
+Machine-readable metadata are in `CITATION.cff`.
 
 ## License
 
