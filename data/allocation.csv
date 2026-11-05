@@ -1,0 +1,4 @@
+model,flag_share_of_routed,overrides_of_rejections,override_rate_reject,fixed_and_accepted,human_decisive_pct
+A,0.1951,49,0.3712,23,18.4
+B,0.1026,48,0.3429,21,15.0
+C,0.213,34,0.4,10,11.8

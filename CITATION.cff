@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below."
+title: "Replication package: mode-based HAIC evaluation applied to a municipal permit workflow"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/gfragi/haic-mode-framework-replication"
+authors:
+  - family-names: Fragiadakis
+    given-names: George
+    affiliation: Harokopio University of Athens
+  - family-names: Pnevmatikakis
+    given-names: Aristodemos
+    affiliation: Novoville Ltd.
+  - family-names: Diou
+    given-names: Christos
+    affiliation: Harokopio University of Athens
+  - family-names: Kousiouris
+    given-names: George
+    affiliation: Harokopio University of Athens
+  - family-names: Talantzis
+    given-names: Fotios
+    affiliation: Novoville Ltd.
+  - family-names: Nikolaidou
+    given-names: Mara
+    affiliation: Harokopio University of Athens
+keywords: [human-AI collaboration, evaluation, public sector AI, learning to defer]

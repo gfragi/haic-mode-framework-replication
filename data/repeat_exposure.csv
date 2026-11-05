@@ -1,0 +1,9 @@
+model,regime,group,n,D_s,Tr
+B,reject,seen_before,36,83.55,0.6944
+B,reject,first_time,104,76.73,0.6442
+B,flag,seen_before,5,222.04,1.0
+B,flag,first_time,11,223.08,1.0
+C,reject,seen_before,38,52.3,0.4737
+C,reject,first_time,47,55.12,0.7021
+C,flag,seen_before,14,171.02,1.0
+C,flag,first_time,9,176.21,1.0

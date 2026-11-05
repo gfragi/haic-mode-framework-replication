@@ -1,0 +1,4 @@
+model,D_observed_s,D_predicted_s,Tr_observed,Tr_predicted
+A,105.7,105.7,0.7012,0.7012
+B,93.28,92.31,0.6923,0.6669
+C,79.24,108.28,0.6852,0.7078

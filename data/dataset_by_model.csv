@@ -1,0 +1,4 @@
+model,n,accepted,corrected_by_model,flagged,rejected,ai_alone,ai_alone_pct,routed,routed_pct,ai_latency_mean_s,ai_latency_sd_s
+A,566,402,0,32,132,402,71.0,164,29.0,45.09,2.33
+B,566,410,0,16,140,410,72.4,156,27.6,15.01,0.75
+C,566,428,30,23,85,458,80.9,108,19.1,18.02,0.88

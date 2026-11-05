@@ -1,0 +1,4 @@
+model,earlier_model,routed_in_both,same_ai_decision,same_operator_decision,same_operator
+B,A,41,25,11,19
+C,A,33,23,16,15
+C,B,27,19,9,19
