@@ -8,9 +8,9 @@ Classification (method section, not an RQ): Table 4 (classification rules), step
 | | Strategy Adaptation Effectiveness (query selection improved by feedback) | **Not applicable**: no active querying | — |
 | | Feedback Quality (relevance and specificity of feedback) | **Other instrument**: operator field-level corrections and comments are logged, but quality needs expert review | `op_fields_with_error`, `op_comment` present |
 | | Feedback Impact (performance change due to feedback) | **Not computable**: no recorded link between operator feedback and retraining | Needs the vendor's training records |
-| **Q2: How well are tasks allocated to use human and AI strengths?** | Dynamic Task Allocation (adjustment of task distribution) | **Computable (static per version)**: allocation is fixed within a version but changes across versions | Auto 71.0/72.4/80.9%; flag share of routed 19.5/10.3/21.3%; Op-5 = all flags (A) → mixed (B) → spread (C) |
+| **Q2: How well are tasks allocated to use human and AI strengths?** | Dynamic Task Allocation (adjustment of task distribution) | **Partial**: allocation is fixed within a version, so only its change across versions is observable | Auto 71.0/72.4/80.9%; flag share of routed 19.5/10.3/21.3%; Op-5 = all flags (A) → mixed (B) → spread (C) |
 | | Query Efficiency (queries to reach target accuracy) | **Not applicable**: no active learning | — |
-| | Expertise Utilization (% decisions where human input is decisive) | **Computable** | Human-decisive share of all applications 18.4/15.0/11.8%; reject-regime override rate 0.371/0.343/0.400 (= 1 − reject-regime T_r) |
+| | Expertise Utilization (% decisions where human input is decisive) | **Computable** | Human-decisive share of all applications 18.4/15.0/11.8% (overrides, corrections, and flagged cases; 12.7/12.2/7.8% without flagged cases); reject-regime override rate 0.371/0.343/0.400 (= 1 − reject-regime T_r) |
 | | Knowledge Retention | **Not applicable**: no periods of non-use | — |
 | | Model Improvement Rate (Δ performance / Δ time) | **Partial**: across versions only, with an agreement proxy | Same caveat as Adaptability Score |
 | | Decision Effectiveness (share of decisions leading to task success) | **Other instrument**: needs ground truth on permit validity; auto-accepted cases are never verified | Audit sample required |
@@ -23,4 +23,10 @@ Classification (method section, not an RQ): Table 4 (classification rules), step
 4. **Regime stratification:** any metric over routed cases must be reported per allocation regime (RQ2), because aggregates mix regimes with different durations and agreement by construction.
 5. **Within-use vs across-version adaptation:** batch deployments only support across-version comparisons; the tree should say so.
 
-Totals: 11 prescribed metrics → 2 computable, 3 partial, 2 need another instrument, 4 not applicable or not computable.
+Totals: 11 prescribed metrics → 1 computable, 4 partial, 2 need another instrument, 4 not applicable or not computable.
+
+## Classification criteria
+- **Computable:** every field the metric requires is logged.
+- **Partial:** the required fields are logged, but only across model versions or as a proxy for part of the construct.
+- **Other instrument:** the construct exists in the deployment, but the data it needs (expert ratings, ground truth) are not in the logs.
+- **Not applicable:** the deployment lacks the mechanism the metric measures (active querying, periods of non-use).

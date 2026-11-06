@@ -1,5 +1,5 @@
 # Requires the anonymized pilot records (not distributed). Usage:
-#   python scripts/extract_decisions.py <pilot_root> private/decisions.csv
+#   python scripts/extract_decisions.py <export_A> <export_B> <export_C> private/decisions.csv
 """Extract non-personal fields from the anonymized Smart City pilot files.
 
 Reads app_*.json for one model version and returns one row per application with:
@@ -36,11 +36,16 @@ def load(folder, model):
     return rows
 
 if __name__ == "__main__":
+    # Usage: python scripts/extract_decisions.py <export_A> <export_B> <export_C> private/decisions.csv
+    # Each <export_X> is the folder of anonymized application records (app_*.json) exported by
+    # the pilot operator for one model version.
     import csv
-    root, out = sys.argv[1], sys.argv[2]
+    if len(sys.argv) != 5:
+        sys.exit("usage: extract_decisions.py <export_A> <export_B> <export_C> <out.csv>")
     rows = []
-    for sub, m in [("sim-pilot-apps-v0", "A"), ("sim-pilot-apps-v1", "B"), ("sim-pilot-apps-v2", "C")]:
-        rows += load(os.path.join(root, sub), m)
+    for folder, m in zip(sys.argv[1:4], "ABC"):
+        rows += load(folder, m)
+    out = sys.argv[4]
     with open(out, "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
     print(len(rows), "rows ->", out)

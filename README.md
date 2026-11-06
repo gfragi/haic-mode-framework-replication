@@ -51,7 +51,7 @@ python scripts/make_figures.py data/ figures/   # writes Figs. 2 and 3
 
 ```bash
 pip install -r requirements-full.txt
-python scripts/extract_decisions.py <pilot_root> private/decisions.csv
+python scripts/extract_decisions.py <export_A> <export_B> <export_C> private/decisions.csv
 python scripts/compute_aggregates.py private/decisions.csv data/
 python scripts/crosscheck_haic_metrics.py private/decisions.csv   # D and T_r with haic-metrics 0.3.0
 ```
